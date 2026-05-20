@@ -2,7 +2,6 @@
     "name": "meta/starter-theme",
     "description": "Twenty-Twenty-Four-style starter theme for meta/admin-core sites. Layouts, header/footer/modals, error pages, design tokens, Tailwind preset.",
     "type": "library",
-    "version": "0.1.0",
     "license": "proprietary",
     "authors": [
         { "name": "META University", "email": "dev@meta.edu.kz" }
