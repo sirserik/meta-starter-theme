@@ -1,5 +1,5 @@
 {
-    "name": "meta/starter-theme",
+    "name": "sirserik/starter-theme",
     "description": "Twenty-Twenty-Four-style starter theme for meta/admin-core sites. Layouts, header/footer/modals, error pages, design tokens, Tailwind preset.",
     "type": "library",
     "license": "proprietary",
@@ -9,7 +9,7 @@
     "require": {
         "php": "^8.2",
         "laravel/framework": "^11.0|^12.0",
-        "meta/admin-core": "^1.0"
+        "sirserik/admin-core": "^1.0"
     },
     "autoload": {
         "psr-4": {

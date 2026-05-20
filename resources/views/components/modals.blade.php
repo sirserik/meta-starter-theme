@@ -14,8 +14,11 @@
     `resources/views/components/modals.blade.php` in your site.
 --}}
 @php
-    $applyUrl = Route::has('apply.submit') ? route('apply.submit') : 'mailto:' . (contact('main_email') ?? 'info@example.com');
-    $infoUrl  = Route::has('info.submit')  ? route('info.submit')  : 'mailto:' . (contact('main_email') ?? 'info@example.com');
+    $fallbackEmail = function_exists('contact')
+        ? (contact('main_email') ?? 'info@example.com')
+        : 'info@example.com';
+    $applyUrl = Route::has('apply.submit') ? route('apply.submit') : 'mailto:' . $fallbackEmail;
+    $infoUrl  = Route::has('info.submit')  ? route('info.submit')  : 'mailto:' . $fallbackEmail;
 @endphp
 
 <div x-data="{
